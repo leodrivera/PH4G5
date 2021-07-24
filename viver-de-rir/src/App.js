@@ -1,17 +1,15 @@
 import React from "react";
 import Header from "./Components/Header/Header";
 import ImgEstatica from "./Components/ImgEstatica/index";
+import Cards from "./Components/Cards/Cards";
 
 function App() {
   return (
     <div>
       <Header />
       <ImgEstatica />
-      <h1>aaaa</h1>
-      <h1>aaaaa</h1>
-      <h1>aaa</h1>
-      <h1>aaa</h1>
-      <h1>aaaa</h1>
+      <Cards/>
+      
     </div>
   );
 }
