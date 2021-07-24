@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AppBar, Button, Container, Toolbar } from "@material-ui/core";
+import { AppBar, Button, Toolbar } from "@material-ui/core";
 
 export const HeaderAppBar = styled(AppBar)`
   && {

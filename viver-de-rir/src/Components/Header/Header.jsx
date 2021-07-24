@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Container } from "@material-ui/core";
 import {
   BotãoLogin,
-  ContainerBotão,
+  //   ContainerBotão,
   HeaderAppBar,
   HeaderToolBar,
 } from "./Header.style";
@@ -29,14 +29,15 @@ export default function Header() {
             Sobre{" "}
           </Button>
           <Button variant="outlined" color="secondary">
-            Nos ajude
+            {" "}
+            Blog
           </Button>
           <Button variant="outlined" color="secondary">
-            Blog
+            Login
           </Button>
 
           <BotãoLogin variant="contained" color="secondary">
-            Login
+            Nos ajude
           </BotãoLogin>
         </HeaderToolBar>
       </HeaderAppBar>
