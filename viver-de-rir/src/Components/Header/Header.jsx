@@ -1,46 +1,43 @@
-import React from "react";
 import { Button, Container } from "@material-ui/core";
+import React from "react";
 import {
   BotãoLogin,
-  //   ContainerBotão,
+  ContainerNav,
+  FraseFoto,
   HeaderAppBar,
   HeaderToolBar,
+  PrimeiraImagem,
+  SessoesPage,
 } from "./Header.style";
-
-// const ColorButton = withStyles((theme) => ({
-//   root: {
-//     color: theme.palette.getContrastText("#c51a1a"[500]),
-//     backgroundColor: "#c51a1a",
-//     "&:hover": {
-//       backgroundColor: "#c51a1a"[700],
-//     },
-//   },
-// }))(Button);
+import ImagemEstatica from "../../assets/viver-de-rir-estatica.jpg";
 
 export default function Header() {
   return (
     <div>
-      <HeaderAppBar position={"sticky"}>
+      <HeaderAppBar position={"fixed"}>
         <HeaderToolBar component={Container}>
-          <Button variant="outlined" color="secondary">
-            Início
-          </Button>
-          <Button variant="outlined" color="secondary">
-            Sobre{" "}
-          </Button>
-          <Button variant="outlined" color="secondary">
-            {" "}
-            Blog
-          </Button>
-          <Button variant="outlined" color="secondary">
-            Login
-          </Button>
-
+          <ContainerNav>
+            <SessoesPage>Início</SessoesPage>
+            <SessoesPage>Sobre </SessoesPage>
+            <SessoesPage> Blog</SessoesPage>
+            <SessoesPage>Login</SessoesPage>
+          </ContainerNav>
           <BotãoLogin variant="contained" color="secondary">
             Nos ajude
           </BotãoLogin>
         </HeaderToolBar>
       </HeaderAppBar>
+      <PrimeiraImagem src={ImagemEstatica} />
+      <div>
+        <FraseFoto>
+          "It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of"
+        </FraseFoto>
+      </div>
     </div>
   );
 }
+// navbar-collapse
+// container-fluid
+
+/*  */

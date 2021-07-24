@@ -5,10 +5,10 @@ import ImagemEstatica from "../../assets/681.jpg";
 export default function ImgEstatica() {
   return (
     <div>
-      <Zoom className="zoom">
+      {/* <div className="zoom">
         <PrimeiraImagem src={ImagemEstatica} className="img" />
-        <TextImg className="text-img">"Aqui vai alguma frase bonita"</TextImg>
-      </Zoom>
+        <h1 className="text-img">"Aqui vai alguma frase bonita"</h1>
+      </div> */}
     </div>
   );
 }
