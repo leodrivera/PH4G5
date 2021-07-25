@@ -1,6 +1,6 @@
 from django.db.models import fields
 from rest_framework import serializers
-from api.models import FotoPrincipal, FotosAcoes, TimeVoluntarios, Depoimentos, NewsLetter
+from api.models import FotoPrincipal, FotosAcoes, TimeVoluntarios, Depoimentos, NewsLetter, NossosDados, LocaisTrabalhados
 
 class AtualizaImagemSerializer(serializers.ModelSerializer):
 
@@ -49,3 +49,17 @@ class NewsLetterSerializer(serializers.ModelSerializer):
     class Meta:
         model = NewsLetter
         fields = '__all__'
+
+class LocaisTrabalhadosSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LocaisTrabalhados
+        fields = '__all__'
+
+class NossosDadosSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NossosDados
+        fields = '__all__'
+
+
+
+        Z:\devFiles\hacktown\backend\backend\backend\urls.py
