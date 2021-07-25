@@ -1,0 +1,51 @@
+from django.db import models
+from django.db.models.base import Model
+
+# Create your models here.
+
+class FotoPrincipal(models.Model):
+    foto_principal = models.ImageField(upload_to='fotoPrincipal')
+    id = models.AutoField(primary_key=True, auto_created=True)
+
+    def __str__(self):
+        return self.descricao
+
+class FotosAcoes(models.Model):
+    foto = models.ImageField(upload_to='fotosAcoes')
+    frase = models.TextField(max_length=500)
+    id = models.AutoField(primary_key=True, auto_created=True)
+
+    def __str__(self):
+        return self.frase_acoes
+
+class TimeVoluntarios(models.Model):
+    nome = models.CharField(max_length=200)
+    frase = models.TextField(max_length=500)
+    foto = models.ImageField(upload_to='voluntarios')
+    id = models.AutoField(primary_key=True, auto_created=True)
+
+    def __str__(self):
+        self.nome
+
+class Depoimentos(models.Model):
+    nome = models.CharField(max_length=200)
+    depoimento = models.TextField(max_length=None)
+    data_add = models.DateTimeField(auto_now_add=True)
+    id = models.AutoField(primary_key=True, auto_created=True)
+
+    def __str__(self):
+        self.depoimento
+
+
+class NewsLetter(models.Model):
+
+    ## cadastro de e-mail para exportar lista com dados e envio de email para ONG
+    email = models.TextField(max_length=100)
+    nome = models.CharField(max_length=200)
+    id = models.AutoField(primary_key=True, auto_created=True)
+
+
+class LocaisTrabalhados(models.Model):
+    local = models.TextField(max_length=100)
+    endereco = models.TextField(max_length=100)
+
