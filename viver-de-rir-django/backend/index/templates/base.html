@@ -1,3 +1,5 @@
+{% load static %}
+
 <html lang="en">
 
     <head>
@@ -15,7 +17,7 @@
     </head>
 
     <body>
-        <p>Olá Mundo!</p>
+        {% include 'Components/Navegation.html' %}
 
         {% include 'Screens/index.html' %}
     </body>
