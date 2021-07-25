@@ -36,7 +36,6 @@ class Depoimentos(models.Model):
     def __str__(self):
         self.depoimento
 
-
 class NewsLetter(models.Model):
     ## cadastro de e-mail para exportar lista com dados e envio de email para ONG
     email = models.TextField(max_length=100)

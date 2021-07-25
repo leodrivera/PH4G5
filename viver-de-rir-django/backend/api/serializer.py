@@ -59,7 +59,3 @@ class NossosDadosSerializer(serializers.ModelSerializer):
     class Meta:
         model = NossosDados
         fields = '__all__'
-
-
-
-        Z:\devFiles\hacktown\backend\backend\backend\urls.py
