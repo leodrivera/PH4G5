@@ -8,7 +8,7 @@ class FotoPrincipal(models.Model):
     id = models.AutoField(primary_key=True, auto_created=True)
 
     def __str__(self):
-        return self.descricao
+        return self.id
 
 class FotosAcoes(models.Model):
     foto = models.ImageField(upload_to='fotosAcoes')
@@ -36,16 +36,18 @@ class Depoimentos(models.Model):
     def __str__(self):
         self.depoimento
 
-
 class NewsLetter(models.Model):
-
     ## cadastro de e-mail para exportar lista com dados e envio de email para ONG
     email = models.TextField(max_length=100)
     nome = models.CharField(max_length=200)
     id = models.AutoField(primary_key=True, auto_created=True)
 
-
 class LocaisTrabalhados(models.Model):
     local = models.TextField(max_length=100)
-    endereco = models.TextField(max_length=100)
+    endereco = models.TextField(max_length=200)
 
+class NossosDados(models.Model):
+    voluntarios = models.IntegerField()
+    visitas_mes = models.IntegerField()
+    pessoas_impactadas = models.IntegerField()
+    horas_doadas = models.IntegerField()

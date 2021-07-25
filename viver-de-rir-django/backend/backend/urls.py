@@ -5,7 +5,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import routers
-from api.views import ImagemViewSet, ImagePrincipalUrl, FotosAcoesView, TimeVoluntariosView, DepoimentosView, NewsLetterView
+from api.views import ImagemViewSet, ImagePrincipalUrl, FotosAcoesView, TimeVoluntariosView, DepoimentosView, NewsLetterView, NossosDadosView, LocaisTrabalhadosView
 from index.views import index
 
 router = routers.DefaultRouter()
@@ -18,6 +18,9 @@ router.register(r'voluntarios', TimeVoluntariosView, basename='voluntarios')
 
 router.register(r'depoimentos', DepoimentosView, basename='depoimentos')
 router.register(r'newsletter', NewsLetterView, basename='newsletter')
+
+router.register(r'nossos-dados', NossosDadosView, basename='nossos-dados')
+router.register(r'locais-trabalhados', LocaisTrabalhadosView, basename='locais-trabalhados')
 
 urlpatterns = [
     path('api/', include(router.urls)),
