@@ -1,28 +1,36 @@
 import styled from "styled-components";
 
+export const ContainerPrimeiraFoto = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  background-color: #ffeda4;
+  padding: 30px 0px 30px 30px;
+`;
 export const PrimeiraImagem = styled.img`
-  width: 100%;
-  height: 90vh;
+  width: 60vw;
+  /* height: 35vw; */
+  margin: 0 auto;
+  border-radius: 10px;
+  /* box-shadow: 1em 1em 1em 1em #00000037; */
 `;
 
-// export const Zoom = styled.div`
-//   overflow: hidden;
-//   .img {
-//     max-width: 100%;
-//     -moz-transition: all 0.3s;
-//     -webkit-transition: all 0.3s;
-//     transition: all 0.3s;
-//     opacity: 0.9;
-
-//     :hover {
-//       -moz-transform: scale(1.1);
-//       -webkit-transform: scale(1.1);
-//       transform: scale(1.1);
-//       opacity: 0.8;
-//       transition: 1s;
-//     }
-//   }
-// `;
+export const FraseFoto = styled.h1`
+  position: absolute;
+  background-color: #00000065;
+  width: 50vw;
+  left: 25%;
+  right: 5%;
+  top: 350px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Secular One", sans-serif;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+`;
 
 // export const TextImg = styled.h1`
 //   position: absolute;
