@@ -6,7 +6,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import routers
 from api.views import ImagemViewSet, ImagePrincipalUrl, FotosAcoesView, TimeVoluntariosView, DepoimentosView, NewsLetterView, NossosDadosView, LocaisTrabalhadosView
-from index.views import index
 
 router = routers.DefaultRouter()
 
@@ -23,7 +22,7 @@ router.register(r'nossos-dados', NossosDadosView, basename='nossos-dados')
 router.register(r'locais-trabalhados', LocaisTrabalhadosView, basename='locais-trabalhados')
 
 urlpatterns = [
-    path('api/', include(router.urls)),
-    path('', include('index.urls'))
+    path('', include(router.urls)),
+    #path('', include('index.urls'))
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
