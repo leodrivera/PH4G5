@@ -1,7 +1,6 @@
 from django.contrib import admin
 from django.db.models import base
 from django.urls import path, include
-
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework import routers
@@ -25,5 +24,7 @@ router.register(r'locais-trabalhados', LocaisTrabalhadosView, basename='locais-t
 urlpatterns = [
     path('api/', include(router.urls)),
     path('', include('index.urls'))
-    
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

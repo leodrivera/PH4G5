@@ -11,7 +11,7 @@ def index(request):
     
     context = {
         'image_url': image_url,
-        'acoes': acoes,
+        'acoes': acoes
     }
     
     return render(request, 'base.html', context)
