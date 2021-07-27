@@ -22,28 +22,28 @@ export default function Voluntarios() {
       <ContainerImg>
         <ContainerImgFrase>
           <ImagensVoluntarios src={Voluntaria1} alt="voluntarios" />
-          <NomeVoluntario>Brendha</NomeVoluntario>
+          <NomeVoluntario>Renata</NomeVoluntario>
           <FraseVoluntario>
             Aqui eu falo um pouco do meu personagem
           </FraseVoluntario>
         </ContainerImgFrase>
         <ContainerImgFrase>
           <ImagensVoluntarios src={Voluntario2} alt="voluntarios" />
-          <NomeVoluntario>Tiago</NomeVoluntario>
+          <NomeVoluntario>Gerson</NomeVoluntario>
           <FraseVoluntario>
             Aqui eu falo um pouco do meu personagem
           </FraseVoluntario>
         </ContainerImgFrase>
         <ContainerImgFrase>
           <ImagensVoluntarios src={Voluntaria3} alt="voluntarios" />
-          <NomeVoluntario>Fernanda</NomeVoluntario>
+          <NomeVoluntario>Bianca</NomeVoluntario>
           <FraseVoluntario>
             Aqui eu falo um pouco do meu personagem
           </FraseVoluntario>
         </ContainerImgFrase>
         <ContainerImgFrase>
           <ImagensVoluntarios src={Voluntaria5} alt="voluntarios" />
-          <NomeVoluntario>Bianca</NomeVoluntario>
+          <NomeVoluntario>Maitê</NomeVoluntario>
           <FraseVoluntario>
             Aqui eu falo um pouco do meu personagem
           </FraseVoluntario>

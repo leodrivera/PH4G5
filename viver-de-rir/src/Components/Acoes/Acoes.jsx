@@ -1,9 +1,9 @@
 import React from "react";
 import { Carousel } from "3d-react-carousal";
-import ImgCarrossel1 from "../../assets/239.jpg";
-import ImgCarrossel2 from "../../assets/363.jpg";
-import ImgCarrossel3 from "../../assets/402.jpg";
-import ImgCarrossel4 from "../../assets/411.jpg";
+import ImgCarrossel1 from "../../assets/Hospital 1.jpg";
+import ImgCarrossel2 from "../../assets/Hospital 2.jpg";
+import ImgCarrossel3 from "../../assets/Natal campanha2.jpg";
+import ImgCarrossel4 from "../../assets/Viaduto 1.jpg";
 import {
   ContainerCarrossel,
   ContainerConheca,

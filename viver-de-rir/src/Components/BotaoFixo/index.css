@@ -25,10 +25,6 @@
   z-index: 20;
 }
 
-.fab button.main:before {
-  /* content: "⏚"; */
-}
-
 .fab ul {
   position: absolute;
   bottom: 0;
@@ -83,11 +79,6 @@
 }
 .fab button.btn1 {
   margin-left: 11px;
-}
-
-.fab button.main:active:before,
-.fab button.main:focus:before {
-  /* content: "↑"; */
 }
 
 .fab button.main:active + ul,

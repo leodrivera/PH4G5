@@ -28,7 +28,7 @@ function App() {
       ) : (
         ""
       )}
-      <BotaoFixo />
+      <BotaoFixo abrirPopUp={setPopUpAjude} PopUpAjude={PopUpAjude} />
       <Footer />
     </div>
   );

@@ -7,10 +7,13 @@ export const ImgSobreNos = styled.img`
 
 export const ContainerImgText = styled.div`
   display: flex;
+  background-color: #ffeda4;
   width: 99vw;
+  margin-top: 50px;
+  padding-bottom: 30px;
 `;
 export const ContainerImagem = styled.div`
-  margin-left: 30px;
+  margin-left: 90px;
   margin-top: 150px;
 `;
 export const ContainerSobre = styled.div`
@@ -29,9 +32,9 @@ export const TittleSobreNos = styled.h1`
   justify-content: center;
   position: absolute;
   z-index: 10;
-  bottom: -740px;
+  bottom: -650px;
   color: white;
-  right: 379px;
+  right: 320px;
   font-family: "Poppins", sans-serif;
 `;
 export const TextSobreNos = styled.p`
@@ -40,4 +43,5 @@ export const TextSobreNos = styled.p`
   margin: 30px 60px 0 60px;
   width: 30vw;
   font-family: "Poppins", sans-serif;
+  opacity: 0.7;
 `;

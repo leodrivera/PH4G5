@@ -7,7 +7,7 @@ export const ContainerConheca = styled.div`
 `;
 
 export const ImgCarrossel = styled.img`
-  width: 20vw;
+  width: 30vw;
 `;
 
 export const ContainerCarrossel = styled.div`

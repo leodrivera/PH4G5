@@ -5,7 +5,6 @@ import {
   ContainerImagem,
   ContainerImgText,
   ContainerSobre,
-  ContainerSobreNos,
   ImgSobreNos,
   TextSobreNos,
   TittleSobreNos,
@@ -22,15 +21,14 @@ export default function SobreNos() {
         <BannerTittle src={BannerSobreNos} />
         <TittleSobreNos>Sobre nós</TittleSobreNos>
         <TextSobreNos>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for 'lorem ipsum' will uncover many web sites still in their
-          infancy. Various versions have evolved over the years, sometimes by
-          accident, sometimes on purpose (injected humour and the like).
+          A ONG surgiu através da necessidade de melhorar a qualidade de vida
+          das pessoas. Na realização da dissertação de mestrado em saúde
+          coletiva, Renata Tôndolo sentiu na pele os entraves para fazer a
+          diferença no bem estar social e de qualidade de vida das pessoas,
+          dentro das organizações de saúde. daí surgiu a necessidade de fazer
+          algo para acolhimento , entregando alegria e amor para todas as
+          pessoas em estado de fragilidade, e o caminho encontrado para isto foi
+          foi através do palhaço.
         </TextSobreNos>
       </ContainerSobre>
     </ContainerImgText>

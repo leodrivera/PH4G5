@@ -11,6 +11,7 @@ export const TitleContagem = styled.h1`
   font-family: "Poppins", sans-serif;
   color: #063d53;
   font-weight: bolder;
+  margin-left: 320px;
 `;
 
 export const ContainerDados = styled.div`
@@ -18,6 +19,7 @@ export const ContainerDados = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  margin-left: 180px;
 `;
 export const ContainerVoluntarios = styled.div`
   /* border: blue solid 2px; */
@@ -28,10 +30,13 @@ export const ContainerVoluntarios = styled.div`
 export const TitleContagemDados = styled.h2`
   color: #bf0100;
   font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
 `;
 export const ParagrafoDados = styled.p`
   font-family: "Poppins", sans-serif;
   color: #063d53;
+  font-size: 20px;
 `;
 export const ContainerMedia = styled.div`
   /* border: green solid 2px; */

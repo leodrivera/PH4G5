@@ -23,7 +23,7 @@ export const ImagensVoluntarios = styled.img`
   width: 10vw;
   border-radius: 50%;
   margin-left: 90px;
-  border: 2px gray solid;
+  border: 2px red solid;
   margin-top: 20px;
   :hover {
     -moz-transform: scale(1.1);
@@ -33,14 +33,12 @@ export const ImagensVoluntarios = styled.img`
   }
 `;
 export const ContainerImgFrase = styled.div`
-  /* border: red solid 1px; */
   margin-left: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 `;
 export const NomeVoluntario = styled.h2`
-  /* border: blue solid 2px; */
   display: flex;
   justify-content: center;
   color: #063d53;

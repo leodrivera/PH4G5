@@ -1,19 +1,11 @@
 import React from "react";
 import {
   ContainerDepoimentos,
-  ContainerImg,
-  ContainerNomeEDescricao,
-  ContainerTitleDepoimento,
   Depoimento,
-  ImgCarrossel,
   ImgComDepoimento,
   ImgDepoimentos,
   TitleDepoimentos,
 } from "./Depoimentos.style";
-import ImgCarrossel1 from "../../assets/239.jpg";
-import ImgCarrossel2 from "../../assets/363.jpg";
-import ImgCarrossel3 from "../../assets/402.jpg";
-import ImgCarrossel4 from "../../assets/411.jpg";
 import "./index.css";
 import depoimentos1 from "../../assets/depoimentos1.png";
 import depoimentos2 from "../../assets/voluntaria5.jpg";
@@ -65,28 +57,3 @@ export default function Depoimentos() {
     </div>
   );
 }
-
-//  <ImgCarrossel src={ImgCarrossel1} />,
-//         <ImgCarrossel src={ImgCarrossel2} />,
-//         <ImgCarrossel src={ImgCarrossel3} />,
-//         <ImgCarrossel src={ImgCarrossel4} />,
-
-/* <ContainerTitleDepoimento>
-        <h1>O que nos move?</h1>
-      </ContainerTitleDepoimento>
-      <ContainerDepoimentos>
-        <div className="flip-container">
-          <div className="flipper">
-            <div class="front">
-              <ImgCarrossel src={ImgCarrossel1} />
-              <ContainerNomeEDescricao>
-                <h2>Nome da pessoa</h2>
-                <p>o que ela faz e quem ela é</p>
-              </ContainerNomeEDescricao>
-            </div>
-            <div class="back">
-              <h4>Aqui vai o depoimento</h4>
-            </div>
-          </div>
-        </div>
-      </ContainerDepoimentos> */

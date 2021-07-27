@@ -1,14 +1,13 @@
 import { Container } from "@material-ui/core";
 import React from "react";
-import { Btn, ContainerBtn } from "./BotaoGigante.style";
+import { ContainerBtn } from "./BotaoGigante.style";
+import kombi from "../../assets/kombi.png";
 
 export default function BotaoGigante() {
   return (
     <Container>
       <ContainerBtn>
-        <Btn variant="contained" color="secondary">
-          Nos ajude a continuar equilibrando os pratinhos!
-        </Btn>
+        <img src={kombi} alt="" />
       </ContainerBtn>
     </Container>
   );

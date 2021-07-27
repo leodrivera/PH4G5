@@ -8,11 +8,11 @@ export const ContainerPrimeiraFoto = styled.div`
   padding: 30px 0px 30px 30px;
 `;
 export const PrimeiraImagem = styled.img`
-  width: 60vw;
-  /* height: 35vw; */
+  width: 85vw;
+  height: 65vh;
+
   margin: 0 auto;
   border-radius: 10px;
-  /* box-shadow: 1em 1em 1em 1em #00000037; */
 `;
 
 export const FraseFoto = styled.h1`
@@ -30,6 +30,7 @@ export const FraseFoto = styled.h1`
   text-align: center;
   font-family: "Secular One", sans-serif;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  letter-spacing: 5px;
 `;
 
 // export const TextImg = styled.h1`
