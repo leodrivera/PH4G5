@@ -11,6 +11,7 @@ import BotaoGigante from "./Components/BotaoGigante/BotaoGigante";
 import Contagem from "./Components/Contagem/Contagem";
 import PopUp from "./Components/PopUp/PopUp";
 
+
 function App() {
   const [PopUpAjude, setPopUpAjude] = useState(false);
   return (
@@ -30,6 +31,7 @@ function App() {
       )}
       <BotaoFixo abrirPopUp={setPopUpAjude} PopUpAjude={PopUpAjude} />
       <Footer />
+
     </div>
   );
 }
