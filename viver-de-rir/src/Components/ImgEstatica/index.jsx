@@ -1,14 +1,21 @@
 import React from "react";
-import { PrimeiraImagem, TextImg, Zoom } from "./index.style";
-import ImagemEstatica from "../../assets/681.jpg";
+import {
+  PrimeiraImagem,
+  FraseFoto,
+  ContainerPrimeiraFoto,
+} from "./index.style";
+import ImagemEstatica from "../../assets/viver-de-rir-estatica2.jpg";
 
 export default function ImgEstatica() {
   return (
     <div>
-      <Zoom className="zoom">
-        <PrimeiraImagem src={ImagemEstatica} className="img" />
-        <TextImg className="text-img">"Aqui vai alguma frase bonita"</TextImg>
-      </Zoom>
+      <ContainerPrimeiraFoto>
+        <PrimeiraImagem src={ImagemEstatica} />
+      </ContainerPrimeiraFoto>
+
+      <div>
+        <FraseFoto>"SONHOS QUE SE TORNAM REALIDADE"</FraseFoto>
+      </div>
     </div>
   );
 }

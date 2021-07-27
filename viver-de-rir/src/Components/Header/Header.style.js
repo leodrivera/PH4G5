@@ -3,17 +3,31 @@ import { AppBar, Button, Toolbar } from "@material-ui/core";
 
 export const HeaderAppBar = styled(AppBar)`
   && {
-    background-color: #ffde59;
+    background-color: #ffffffc3;
     color: black;
     cursor: pointer;
+    height: 12vh;
   }
 `;
 export const HeaderToolBar = styled(Toolbar)`
-  display: flex;
   justify-content: space-between;
 `;
-export const BotãoLogin = styled(Button)`
-  && {
-    width: 150px;
+export const LogoHeader = styled.img`
+  width: 8vw;
+`;
+
+export const BotaoMenu = styled(Button)`
+  font-weight: bold;
+`;
+
+export const IconsRedes = styled.img`
+  margin-left: 5px;
+  :hover {
+    background-color: #ffff0082;
   }
+`;
+
+export const Link = styled.a`
+  text-decoration: none;
+  color: black;
 `;

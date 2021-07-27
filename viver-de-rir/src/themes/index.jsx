@@ -3,12 +3,12 @@ import { createTheme } from "@material-ui/core";
 export const theme = createTheme({
   palette: {
     primary: {
-      light: "#ffe16a",
+      light: "#ffe16aa0",
       main: "#FFDE59",
       dark: "#ffcd59",
     },
     secondary: {
-      light: "#c51a1a",
+      light: "#c51a1aca",
       main: "#bf0100",
       dark: "#ac0100",
     },
@@ -16,5 +16,8 @@ export const theme = createTheme({
       fontFamily: "Open Sans",
     },
   },
-  // background-color: #0000007b;
+  // background-color: #063d538d;
+  // background-color: #fbff00;
+  // background-color: #ffffff1f
+  // background-color: #fdcdcdc3;
 });
