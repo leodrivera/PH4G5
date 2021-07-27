@@ -1,0 +1,41 @@
+{% load static %}
+
+    <div class="container text-center" style="background-color: #DDD; padding-top: 3rem; padding-bottom: 1rem;" id="ajude">
+        <h2 style="color:darkred; margin-bottom: 3rem;">Ajude-nos como Puder</h2>
+        <img src="{% static 'media/doe.jpg' %}" />
+        
+        <div class="row" style="margin-top: 3rem;">
+            <div class="col" style="align-content: center; width: 20%; justify-content: center; display: grid;">
+                <a 
+                    type="button" 
+                    class="btn btn-success btn-lg" 
+                    href="https://atados.com.br/ong/viver-de-rir" 
+                    target="_blank">Saiba como ser Voluntário</a>
+            </div>
+            <div class="col" style="align-content: center; width: 20%; justify-content: center;">
+                <!-- Button trigger modal -->
+
+                <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Saiba como Ajudar
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ajude a ONG</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <img src="{% static 'media/nosajude-viverderir.png' %}" />"
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>

@@ -22,6 +22,7 @@ router.register(r'nossos-dados', NossosDadosView, basename='nossos-dados')
 router.register(r'locais-trabalhados', LocaisTrabalhadosView, basename='locais-trabalhados')
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('', include('index.urls'))
 ]

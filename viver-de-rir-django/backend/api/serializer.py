@@ -41,9 +41,15 @@ class TimeVoluntariosSerializer(serializers.ModelSerializer):
         return obj.foto.url
 
 class DepoimentosSerializer(serializers.ModelSerializer):
+    image_url = serializers.SerializerMethodField('get_image_url')
+
     class Meta:
         model = Depoimentos
         fields = '__all__'
+
+    def get_image_url(self, obj):
+        return obj.foto.url
+
 
 class NewsLetterSerializer(serializers.ModelSerializer):
     class Meta:

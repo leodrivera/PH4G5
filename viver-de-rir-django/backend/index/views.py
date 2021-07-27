@@ -5,13 +5,18 @@ import requests
 # Create your views here.
 
 def index(request):
-    image_url = requests.get('http://localhost:8000/api/foto-principal/?format=json').json()[0]
+    imagem_principal = requests.get('http://localhost:8000/api/foto-principal/').json()[0]
+    acoes = requests.get('http://localhost:8000/api/acoes/').json()
+    dados_ong = requests.get('http://localhost:8000/api/nossos-dados/').json()[-1]
+    voluntarios = requests.get('http://localhost:8000/api/voluntarios/').json()
+    depoimentos = requests.get('http://localhost:8000/api/depoimentos/').json()
 
-    acoes = requests.get('http://localhost:8000/api/acoes/?format=json').json()
-    
     context = {
-        'image_url': image_url,
-        'acoes': acoes
+        'image_url': imagem_principal,
+        'acoes': acoes,
+        'dados_ong': dados_ong,
+        'voluntarios': voluntarios,
+        'depoimentos': depoimentos,
     }
     
     return render(request, 'base.html', context)
